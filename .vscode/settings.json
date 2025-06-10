@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "all_implementation.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c",
+        "string.h": "c",
+        "type_traits": "c",
+        "mpi.h": "c"
+    }
+}

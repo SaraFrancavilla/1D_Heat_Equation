@@ -1,0 +1,112 @@
+
+ Sequential Full Matrix 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+      x: 7, u: 6.11
+      x: 8, u: 4.44
+      x: 9, u: 2.33
+      x: 10, u: 0.00
+
+ Sequential Half Matrix 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ Sequential Swap Vector 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ OMP Half Matrix Unroll 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ OMP Half Matrix Collapse 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ OMP Half Matrix Aligned 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ OMP Swap Vector Aligned 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ MPI Half Matrix Broadcast 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ MPI Half Matrix Broadcast Matrix 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ MPI Half Matrix Scatter Matrix 
+      x: 0, u: 0.00
+      x: 1, u: 2.33
+      x: 2, u: 4.44
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ MPI Half Matrix Send Recv 
+      x: 0, u: 0.00
+      x: 1, u: 2.35
+      x: 2, u: 4.48
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
+
+ MPI Half Matrix ISend IRecv 
+      x: 0, u: 0.00
+      x: 1, u: 2.35
+      x: 2, u: 4.48
+      x: 3, u: 6.11
+      x: 4, u: 7.19
+      x: 5, u: 7.56
+      x: 6, u: 7.19
