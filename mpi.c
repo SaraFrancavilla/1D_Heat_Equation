@@ -16,7 +16,7 @@ void solveMPIHalfMatrixBROADCAST(int Nx, int Nt, float central_heat, double s, i
     if (rank == 0) {
         u = aligned_alloc(32, u_dim*Nt*sizeof(double));
         if (!u) {
-            printf("Errore nell'allocazione della memoria.\n");
+            printf("Error in memory allocation.\n");
             MPI_Finalize();
             return;
         }
@@ -111,7 +111,7 @@ void solveMPIHalfMatrixBMATRIX(int Nx, int Nt, float central_heat, double s, int
     if (rank == 0) {
         u = aligned_alloc(32, u_dim*Nt*sizeof(double));
         if (!u) {
-            printf("Errore nell'allocazione della memoria.\n");
+            printf("Error in memory allocation.\n");
             MPI_Finalize();
             return;
         }
@@ -211,7 +211,7 @@ void solveMPIHalfMatrixSMATRIX(int Nx, int Nt, float central_heat, double s, int
 
         u = aligned_alloc(32, u_dim*Nt*sizeof(double));
         if (!u) {
-            printf("Errore nell'allocazione della memoria.\n");
+            printf("Error in memory allocation.\n");
             MPI_Finalize();
             return;
         }
@@ -340,7 +340,7 @@ void solveMPIHalfMatrixSENDREC(int Nx, int Nt, float central_heat, double s, int
     if (rank == 0) {
         u = aligned_alloc(32, u_dim * Nt * sizeof(double));
         if (!u) {
-            printf("Errore nell'allocazione della memoria.\n");
+            printf("Error in memory allocation.\n");
             MPI_Finalize();
             return;
         }
@@ -439,7 +439,7 @@ void solveMPIHalfMatrixISENDIRECV(int Nx, int Nt, float central_heat, double s, 
     if (rank == 0) {
         u = aligned_alloc(32, u_dim * Nt * sizeof(double));
         if (!u) {
-            printf("Errore nell'allocazione della memoria.\n");
+            printf("Error in memory allocation.\n");
             MPI_Finalize();
             return;
         }
