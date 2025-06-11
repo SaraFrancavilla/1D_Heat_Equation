@@ -12,7 +12,8 @@ This repository includes a reproducible test suite, a performance driver, and po
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)  
-- [Quick Start](#quick-start)  
+- [Quick Start](#quick-start)
+- [Quick Start Cluster](#quick-start-cluster) 
 - [Usage](#usage)  
 - [Output Files](#output-files)  
 - [Project Structure](#project-structure)  
@@ -27,7 +28,7 @@ This repository includes a reproducible test suite, a performance driver, and po
 
 ---
 
-## Quick Start
+## Quick Start 
 
 1. **Clone the repository**  
    ```bash
@@ -42,6 +43,25 @@ This repository includes a reproducible test suite, a performance driver, and po
    ```bash
    mpirun -np <num_processes≤64> ./a.out
    ```
+## Quick Start Cluster
+
+1. **Access and clone**  
+   ```bash
+   ssh username@hpc.unitn.it
+   git clone https://github.com/SaraFrancavilla/1D_Heat_Equation.git
+   cd 1D_Heat_Equation
+   ```
+2. **Start an interactive session and load the modules**
+   ```bash
+   qsub -I -q short_cpuQ -l select=1:ncpus=64:mpiprocs=64
+   module load gcc91 mpich-3.2.1--gcc-9.1.0
+   ```
+3. **Compile and launch the program**
+   ```bash
+   mpicc -O2 -march=native -fopenmp all_implementation.h grouping_functions.c main.c matrix_config.c mpi.c     parallel.c sequential.c write_to_file.c -lm
+   mpirun -np <max_processes64> ./a.out
+   ```
+
 ## Usage
 After launching `./a.out`, select one of the available menu options:
 1. **Correctness**  
