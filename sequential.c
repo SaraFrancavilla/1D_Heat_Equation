@@ -7,7 +7,7 @@ void solveSeqFullMatrix(int Nx, int Nt, float central_heat, double s, int index)
     // Allocating memory for a mono-dimensional array
     double *u = (double *)calloc(Nx * Nt, sizeof(double));
     if (u == NULL) {
-        printf("Errore nell'allocazione della memoria.\n");
+        printf("Error in memory allocation.\n");
         return;
     }
 
@@ -38,7 +38,7 @@ void solveSeqHalfMatrix(int Nx, int Nt, float central_heat, double s, int index)
 
     double *u = (double *)calloc(u_dim * Nt, sizeof(double));
     if (u == NULL) {
-        printf("Errore nell'allocazione della memoria.\n");
+        printf("Error in memory allocation.\n");
         return;
     }
 
@@ -70,7 +70,7 @@ void solveSeqSwapVec(int Nx, int Nt, float central_heat, double s, int index){
 
     double *u = (double *)calloc(u_dim * Nt, sizeof(double));
     if (u == NULL) {
-        printf("Errore nell'allocazione della memoria.\n");
+        printf("Error in memory allocation.\n");
         return;
     }
 
