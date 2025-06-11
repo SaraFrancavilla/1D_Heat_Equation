@@ -66,6 +66,7 @@ void solveSeqSwapVec(int Nx, int Nt, float central_heat, double s, int index){
         u_dim = Nx / 2 + 1;
     } else {
         u_dim = Nx / 2 + 2;
+    }
 
     double *u = (double *)calloc(u_dim * Nt, sizeof(double));
     if (u == NULL) {
