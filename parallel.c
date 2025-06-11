@@ -13,7 +13,7 @@ void solveOMPHalfMatrixUNROLLL(int Nx, int Nt, float central_heat, double s, int
     // Allocating memory for a mono-dimensional array
     double *u = aligned_alloc(32, u_dim*Nt*sizeof(double));
     if (u == NULL) {
-        printf("Errore nell'allocazione della memoria.\n");
+        printf("Error in memory allocation.\n");
         return;
     }
     memset(u, 0, u_dim*Nt*sizeof(double));
@@ -55,7 +55,7 @@ void solveOMPHalfMatrixCOLLAPSE(int Nx, int Nt, float central_heat, double s, in
 
     double *u = aligned_alloc(32, u_dim*Nt*sizeof(double));
     if (u == NULL) {
-        printf("Errore nell'allocazione della memoria.\n");
+        printf("Error in memory allocation.\n");
         return;
     }
     memset(u, 0, u_dim*Nt*sizeof(double));
@@ -92,10 +92,11 @@ void solveOMPHalfMatrixALIGNED(int Nx, int Nt, float central_heat, double s, int
         u_dim = Nx / 2 + 1; 
     }else{
         u_dim = Nx / 2 + 2; 
+    }
 
     double *u = aligned_alloc(32, u_dim*Nt*sizeof(double));
     if (u == NULL) {
-        printf("Errore nell'allocazione della memoria.\n");
+        printf("Error in memory allocation.\n");
         return;
     }
     memset(u, 0, u_dim*Nt*sizeof(double));
